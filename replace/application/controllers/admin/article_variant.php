@@ -174,6 +174,8 @@ class Article_Variant extends oxAdminDetails
         }
 
         $oArticle->save();
+		oxNew("oxarticlelist")->updateUpcomingPrices(true);
+
     }
 
     /**
